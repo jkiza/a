@@ -16,64 +16,61 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Table</h1>
-      </header>
-      <br>
 
-      <div class="user">
-        <h3>What would you like to do with the table?</h3>
+      <div class="table">
+        <h1>What would you like to do with the table?</h1>
+        <h4>Add a row to table body</h4>
+        <input type="text" onfocus="this.value=''" placeholder="Number" id="input1">
+        <br>
+        <input type="text" onfocus="this.value=''" placeholder="Name" id="input2">
+        <br>
+        <input type="text" onfocus="this.value=''" placeholder="Colour" id="input3">
+        <br>
+        <input type="text" onfocus="this.value=''" placeholder="Item" id="input4">
+        <br>
+        <button type="submit" class="btn-primary" id="rowAddBtn">Add a row</button>
+        <br>
+        <h4>Remove a row from table body</h4>
+        <input type="text" onfocus="this.value=''" placeholder="Row number" id="input5">
+        <br>
+        <button type="submit" class="btn-primary" id="rowRemBtn">Remove a row</button>
         <br>
 
-        <div class="row">
-          <div class="col">
-            <h4>Add a row</h4>
-          </div>
-          <div class="col">
-            <h4>Add a column</h4>
-          </div>
-          <div class="col">
-            <h4>Remove a row</h4>
-          </div>
-          <div class="col">
-            <h4>Remove a column</h4>
-          </div>
-        </div>
-      </div>
-      <br>
-      
-      <div class="table">
-        <table>
-          <tr class="row0">
-            <th>Number</th>
-            <th>Name</th>
-            <th>Colour</th>
-            <th>Item</th>
-          </tr>
-          <tr class="row1">
-            <td>1</td>
-            <td>Aoife</td>
-            <td>Black</td>
-            <td>Chair</td>
-          </tr>
-          <tr class="row2">
-            <td>2</td>
-            <td>Rajesh</td>
-            <td>Orange</td>
-            <td>Spoon</td>
-          </tr>
-          <tr class="row3">
-            <td>3</td>
-            <td>Kuba</td>
-            <td>Cyan</td>
-            <td>Brush</td>
-          </tr>
-          <tr class="row4">
-            <td>4</td>
-            <td>Ginny</td>
-            <td>Purple</td>
-            <td>Card</td>
-          </tr>
+        <table id="table" width="1000px">
+          <thead id="head">
+            <tr class="row0">
+              <th>Number</th>
+              <th>Name</th>
+              <th>Colour</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row1">
+              <td>1</td>
+              <td>Aoife</td>
+              <td>Black</td>
+              <td>Chair</td>
+            </tr>
+            <tr class="row2">
+              <td>2</td>
+              <td>Rajesh</td>
+              <td>Orange</td>
+              <td>Spoon</td>
+            </tr>
+            <tr class="row3">
+              <td>3</td>
+              <td>Kuba</td>
+              <td>Cyan</td>
+              <td>Brush</td>
+            </tr>
+            <tr class="row4">
+              <td>4</td>
+              <td>Ginny</td>
+              <td>Purple</td>
+              <td>Card</td>
+            </tr>
+          </tbody>
         </table>
       </div>
 
