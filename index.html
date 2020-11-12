@@ -20,7 +20,7 @@
       <div class="table">
         <h1>What would you like to do with the table?</h1>
         <h4>Add a row to table body</h4>
-        <input type="text" onfocus="this.value=''" placeholder="Number" id="input1">
+        <input type="number" onfocus="this.value=''" placeholder="Number" id="input1">
         <br>
         <input type="text" onfocus="this.value=''" placeholder="Name" id="input2">
         <br>
@@ -30,10 +30,11 @@
         <br>
         <button type="submit" class="btn-primary" id="rowAddBtn">Add a row</button>
         <br>
+
         <h4>Remove a row from table body</h4>
         <input type="text" onfocus="this.value=''" placeholder="Row number" id="input5">
         <br>
-        <button type="submit" class="btn-primary" id="rowRemBtn">Remove a row</button>
+        <button type="submit" onSubmit="validate()" class="btn-primary" id="rowRemBtn">Remove a row</button>
         <br>
 
         <table id="table" width="1000px">
@@ -47,25 +48,25 @@
           </thead>
           <tbody>
             <tr class="row1">
-              <td>1</td>
+              <td>100</td>
               <td>Aoife</td>
               <td>Black</td>
               <td>Chair</td>
             </tr>
             <tr class="row2">
-              <td>2</td>
+              <td>34</td>
               <td>Rajesh</td>
               <td>Orange</td>
               <td>Spoon</td>
             </tr>
             <tr class="row3">
-              <td>3</td>
+              <td>52435</td>
               <td>Kuba</td>
               <td>Cyan</td>
               <td>Brush</td>
             </tr>
             <tr class="row4">
-              <td>4</td>
+              <td>4.3</td>
               <td>Ginny</td>
               <td>Purple</td>
               <td>Card</td>

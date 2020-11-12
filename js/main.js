@@ -21,6 +21,27 @@ $(document).ready(function() {
   rowRemBtn.addEventListener("click", function() {
     var rowNum = document.getElementById('input5').value;
     document.getElementById("table").deleteRow(rowNum);
-  })
+  });
+
+  function validate() {
+    function countRows() {
+      var totalRowCount = 0;
+      var rowCount = 0;
+      var table = document.getElementById("table");
+      var rows = table.getElementsByTagName("tr");
+      for (var i = 0; i < rows.length; i++) {
+        totalRowCount++;
+        if (rows[i].getElementsByTagName("td").length > 0) {
+          rowCount++;
+        }
+      }
+      return totalRowCount;
+    }
+
+    var rowNum = document.getElementById('input5').value;
+    if (rowNum > totalRowCount) {
+      console.log('bad');
+    }
+  }
 
 });
